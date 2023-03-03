@@ -53,14 +53,12 @@ public void displayLosingMessage()  {
   for (int i = 0; i < loser.length(); i++){
     buttons[10][5+i].setLabel(loser.substring(i, i+1));
   }
-  noLoop();
 }
 public void displayWinningMessage()  {
   String winner = "YOU WIN!";
   for (int i = 0; i < winner.length(); i++){
     buttons[10][6+i].setLabel(winner.substring(i, i+1));
   }
-  noLoop();
 }
 public boolean isValid(int r, int c)  {
   return r < NUM_ROWS && c < NUM_COLS && r >= 0 && c>=0;
